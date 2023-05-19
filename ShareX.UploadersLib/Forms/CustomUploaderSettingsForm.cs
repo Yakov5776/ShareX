@@ -79,6 +79,7 @@ namespace ShareX.UploadersLib
                 new CodeMenuItem("{xml:path}", "Parse XML response using XPath"),
                 new CodeMenuItem("{regex:pattern|group}", "Parse response using Regex"),
                 new CodeMenuItem("{filename}", "File name used when uploading"),
+                new CodeMenuItem("{filepath}", "Path of file being uploaded"),
                 new CodeMenuItem("{random:input1|input2}", "Random selection from list"),
                 new CodeMenuItem("{select:input1|input2}", "Lets user to select one input from list"),
                 new CodeMenuItem("{inputbox:title|default_value}", "Lets user to input text"),
@@ -954,6 +955,7 @@ namespace ShareX.UploadersLib
                         AutoCompleteStringCollection col = new AutoCompleteStringCollection();
                         col.Add("{input}");
                         col.Add("{filename}");
+                        col.Add("{filepath}");
                         col.Add("{random:");
                         col.Add("{select:");
                         col.Add("{prompt:");

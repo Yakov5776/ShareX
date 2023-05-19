@@ -23,20 +23,18 @@
 
 #endregion License Information (GPL v3)
 
-using System.IO;
+using ShareX.HelpersLib;
 
 namespace ShareX.UploadersLib
 {
-    public class CustomUploaderInput
+    // Example: {filepath}
+    internal class CustomUploaderFunctionFilePath : CustomUploaderFunction
     {
-        public string FileName { get; set; }
-        public string FilePath { get { return FileName; }} // TODO
-        public string Input { get; set; }
+        public override string Name { get; } = "filepath";
 
-        public CustomUploaderInput(string fileName, string input)
+        public override string Call(ShareXCustomUploaderSyntaxParser parser, string[] parameters)
         {
-            FileName = fileName;
-            Input = input;
+            return parser.FilePath;
         }
     }
 }

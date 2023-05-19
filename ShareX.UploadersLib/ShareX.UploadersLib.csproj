@@ -132,6 +132,7 @@
     <Compile Include="CustomUploader\Functions\CustomUploaderFunction.cs" />
     <Compile Include="CustomUploader\Functions\CustomUploaderFunctionBase64.cs" />
     <Compile Include="CustomUploader\Functions\CustomUploaderFunctionFileName.cs" />
+    <Compile Include="CustomUploader\Functions\CustomUploaderFunctionFilePath.cs" />
     <Compile Include="CustomUploader\Functions\CustomUploaderFunctionInput.cs" />
     <Compile Include="CustomUploader\Functions\CustomUploaderFunctionOutputBox.cs" />
     <Compile Include="CustomUploader\Functions\CustomUploaderFunctionResponseURL.cs" />
@@ -574,6 +575,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomUploaderSettingsForm.resx">
       <DependentUpon>CustomUploaderSettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CustomUploaderSettingsForm.ru.resx">
       <DependentUpon>CustomUploaderSettingsForm.cs</DependentUpon>

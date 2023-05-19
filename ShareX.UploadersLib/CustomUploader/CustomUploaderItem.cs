@@ -200,6 +200,7 @@ namespace ShareX.UploadersLib
             Dictionary<string, string> replace = new Dictionary<string, string>();
             replace.Add("{input}", EncodeBodyData(input.Input));
             replace.Add("{filename}", EncodeBodyData(input.FileName));
+            replace.Add("{filepath}", EncodeBodyData(input.FilePath));
             result = result.BatchReplace(replace, StringComparison.OrdinalIgnoreCase);
 
             return result;

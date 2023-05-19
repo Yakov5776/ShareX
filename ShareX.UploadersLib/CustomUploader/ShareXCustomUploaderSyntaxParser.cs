@@ -35,6 +35,7 @@ namespace ShareX.UploadersLib
         private static IEnumerable<CustomUploaderFunction> Functions = Helpers.GetInstances<CustomUploaderFunction>();
 
         public string FileName { get; set; }
+        public string FilePath { get; set; }
         public string Input { get; set; }
         public ResponseInfo ResponseInfo { get; set; }
         public bool URLEncode { get; set; } // Only URL encodes file name and input
@@ -48,6 +49,7 @@ namespace ShareX.UploadersLib
         public ShareXCustomUploaderSyntaxParser(CustomUploaderInput input)
         {
             FileName = input.FileName;
+            FilePath = input.FilePath;
             Input = input.Input;
         }
 
